@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <ul>
+        {% for imie in uczestnicy %}
+            <li>{{ imie }} zapisał się na: {{ uczestnicy[imie] }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
